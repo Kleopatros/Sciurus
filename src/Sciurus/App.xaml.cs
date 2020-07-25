@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using Sciurus.ViewModels;
 using Sciurus.Views;
 
 namespace Sciurus
@@ -42,7 +43,9 @@ namespace Sciurus
         /// <returns>The shell of the application.</returns>
         private Window CreateShell()
         {
-            return new Shell();
+            ShellViewModel shellViewModel = new ShellViewModel();
+            Shell shell = new Shell() { DataContext = shellViewModel };
+            return shell;
         }
 
         /// <summary>

@@ -7,6 +7,9 @@ namespace Sciurus.Views
     /// </summary>
     public partial class Shell : Window
     {
+        /// <summary>
+        /// Initializes a new <see cref="Shell"/> instance.
+        /// </summary>
         public Shell()
         {
             this.InitializeComponent();
