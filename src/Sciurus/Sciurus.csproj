@@ -55,6 +55,34 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Views\ContentDetailsView.xaml.cs">
+      <DependentUpon>ContentDetailsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartitionContentsView.xaml.cs">
+      <DependentUpon>PartitionContentsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartitionDetailsView.xaml.cs">
+      <DependentUpon>PartitionDetailsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StatusPanelView.xaml.cs">
+      <DependentUpon>StatusPanelView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\ContentDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NavigationPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartitionContentsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartitionDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Shell.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -65,10 +93,17 @@
     </Compile>
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />
+    <Compile Include="Views\NavigationPanelView.xaml.cs">
+      <DependentUpon>NavigationPanelView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Shell.xaml.cs">
       <DependentUpon>Shell.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\StatusPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

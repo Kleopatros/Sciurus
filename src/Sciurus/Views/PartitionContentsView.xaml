@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="Sciurus.Views.PartitionContentsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Border BorderThickness="1" BorderBrush="Black">
+    <TextBlock Text="PartitionContentsView" HorizontalAlignment="Center" VerticalAlignment="Center" />
+  </Border>
+</UserControl>
