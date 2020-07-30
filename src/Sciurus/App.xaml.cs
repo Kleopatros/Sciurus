@@ -24,6 +24,16 @@ namespace Sciurus
         }
 
         /// <summary>
+        /// Raises the <see cref="Application.Exit"/> event.
+        /// </summary>
+        /// <param name="e">An <see cref="ExitEventArgs"/> that contains the event data.</param>
+        protected override void OnExit(ExitEventArgs e)
+        {
+            Sciurus.Properties.Settings.Default.Save();
+            base.OnExit(e);
+        }
+
+        /// <summary>
         /// Runs the initialization sequence to configure the application.
         /// </summary>
         private void Initialize()

@@ -1,8 +1,10 @@
 ﻿<Window x:Class="Sciurus.Views.Shell"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:w="clr-namespace:Sciurus.Windows"
     xmlns:v="clr-namespace:Sciurus.Views"
-    Title="{Binding Title}" Width="{Binding Width}" Height="{Binding Height}">
+    Width="{w:SettingsBinding ShellViewWidth}" Height="{w:SettingsBinding ShellViewHeight}"
+    Title="{Binding Title}">
 
   <DockPanel>
 
@@ -10,10 +12,10 @@
 
     <v:StatusPanelView DockPanel.Dock="Bottom" DataContext="{Binding StatusPanelViewModel}" />
 
-    <DockPanel MinWidth="50" Width="{Binding DetailsViewWidth}">
+    <DockPanel MinWidth="50" Width="{w:SettingsBinding DetailsViewWidth}">
 
-      <v:ContentDetailsView DockPanel.Dock="Bottom" MinHeight="50" Height="{Binding ContentDetailsViewHeight}"
-          DataContext="{Binding ContentDetailsViewModel}" />
+      <v:ContentDetailsView DockPanel.Dock="Bottom" DataContext="{Binding ContentDetailsViewModel}"
+          MinHeight="25" Height="{w:SettingsBinding ContentDetailsViewHeight}" />
 
       <v:PartitionDetailsView DataContext="{Binding PartitionDetailsViewModel}" />
 
