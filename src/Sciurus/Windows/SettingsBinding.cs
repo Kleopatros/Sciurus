@@ -1,8 +1,8 @@
-﻿using System.Windows.Data;
-using Sciurus.Properties;
-
-namespace Sciurus.Windows
+﻿namespace Sciurus.Windows
 {
+    using System.Windows.Data;
+    using Sciurus.Properties;
+
     /// <summary>
     /// Provides high-level access to the definition of a settings binding, which connects the
     /// properties of binding target objects (typically, WPF elements), and the data source - the
@@ -11,7 +11,7 @@ namespace Sciurus.Windows
     public class SettingsBinding : Binding
     {
         /// <summary>
-        /// Initializes a new <see cref="SettingsBinding"/> instance.
+        /// Initializes a new instance of the <see cref="SettingsBinding"/> class.
         /// </summary>
         public SettingsBinding()
         {
@@ -19,7 +19,8 @@ namespace Sciurus.Windows
         }
 
         /// <summary>
-        /// Initializes a new <see cref="SettingsBinding"/> instance with an initial path.
+        /// Initializes a new instance of the <see cref="SettingsBinding"/> class with an initial
+        /// path.
         /// </summary>
         /// <param name="path">The initial <see cref="Binding.Path"/> for the binding.</param>
         public SettingsBinding(string path)

@@ -1,16 +1,16 @@
-﻿using System.Windows;
-using Sciurus.ViewModels;
-using Sciurus.Views;
-
-namespace Sciurus
+﻿namespace Sciurus
 {
+    using System.Windows;
+    using Sciurus.ViewModels;
+    using Sciurus.Views;
+
     /// <summary>
     /// Interaction logic for the application.
     /// </summary>
     /// <remarks>
     /// Implementation based on PrismApplicationBase.
     /// </remarks>
-    /// <seealso cref="https://github.com/PrismLibrary/Prism"/>
+    /// <seealso ref="https://github.com/PrismLibrary/Prism"/>
     public partial class App : Application
     {
         /// <summary>

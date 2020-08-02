@@ -1,14 +1,14 @@
-﻿using System.Windows.Controls;
-
-namespace Sciurus.Views
+﻿namespace Sciurus.Views
 {
+    using System.Windows.Controls;
+
     /// <summary>
-    /// Interaction logic for ContentDetailsView.xaml
+    /// Interaction logic for ContentDetailsView.xaml.
     /// </summary>
     public partial class ContentDetailsView : UserControl
     {
         /// <summary>
-        /// Initializes a new <see cref="ContentDetailsView"/> instance.
+        /// Initializes a new instance of the <see cref="ContentDetailsView"/> class.
         /// </summary>
         public ContentDetailsView()
         {

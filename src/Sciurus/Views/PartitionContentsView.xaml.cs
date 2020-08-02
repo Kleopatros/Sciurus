@@ -1,14 +1,14 @@
-﻿using System.Windows.Controls;
-
-namespace Sciurus.Views
+﻿namespace Sciurus.Views
 {
+    using System.Windows.Controls;
+
     /// <summary>
-    /// Interaction logic for PartitionContentsView.xaml
+    /// Interaction logic for PartitionContentsView.xaml.
     /// </summary>
     public partial class PartitionContentsView : UserControl
     {
         /// <summary>
-        /// Initializes a new <see cref="PartitionContentsView"/> instance.
+        /// Initializes a new instance of the <see cref="PartitionContentsView"/> class.
         /// </summary>
         public PartitionContentsView()
         {

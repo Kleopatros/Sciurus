@@ -1,8 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Sciurus.ViewModels;
-
-namespace SciurusTests
+﻿namespace SciurusTests
 {
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Sciurus.ViewModels;
+
     /// <summary>
     /// Tests the <see cref="ViewModel"/> class.
     /// </summary>

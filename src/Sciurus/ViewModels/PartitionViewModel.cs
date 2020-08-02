@@ -8,7 +8,7 @@
         private string _name;
 
         /// <summary>
-        /// Intializes a new <see cref="PartitionViewModel"/> instance.
+        /// Initializes a new instance of the <see cref="PartitionViewModel"/> class.
         /// </summary>
         public PartitionViewModel()
         {

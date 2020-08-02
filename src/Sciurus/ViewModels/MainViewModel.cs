@@ -1,7 +1,7 @@
-﻿using System.Collections.ObjectModel;
-
-namespace Sciurus.ViewModels
+﻿namespace Sciurus.ViewModels
 {
+    using System.Collections.ObjectModel;
+
     /// <summary>
     /// Main view model for the application.
     /// </summary>
@@ -13,7 +13,7 @@ namespace Sciurus.ViewModels
         private PartitionViewModel _selectedPartition;
 
         /// <summary>
-        /// Intializes a new <see cref="MainViewModel"/> instance.
+        /// Initializes a new instance of the <see cref="MainViewModel"/> class.
         /// </summary>
         public MainViewModel()
         {
