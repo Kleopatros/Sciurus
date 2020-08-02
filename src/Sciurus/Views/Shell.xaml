@@ -7,21 +7,34 @@
     Title="{Binding Title}">
 
   <DockPanel>
-
-    <v:NavigationPanelView DockPanel.Dock="Top" DataContext="{Binding NavigationPanelViewModel}" />
-
     <v:StatusPanelView DockPanel.Dock="Bottom" DataContext="{Binding StatusPanelViewModel}" />
 
-    <DockPanel MinWidth="50" Width="{w:SettingsBinding DetailsViewWidth}">
+    <TabControl ItemsSource="{Binding Partitions}" SelectedItem="{Binding SelectedPartition}">
+      <TabControl.ItemTemplate>
+        <DataTemplate>
+          <DockPanel>
+            <TextBlock Text="{Binding Name}" TextTrimming="CharacterEllipsis" />
+          </DockPanel>
+        </DataTemplate>
+      </TabControl.ItemTemplate>
+      <TabControl.ContentTemplate>
+        <DataTemplate>
+          <DockPanel>
+            
+            <DockPanel MinWidth="50" Width="{w:SettingsBinding DetailsViewWidth}">
 
-      <v:ContentDetailsView DockPanel.Dock="Bottom" DataContext="{Binding ContentDetailsViewModel}"
-          MinHeight="25" Height="{w:SettingsBinding ContentDetailsViewHeight}" />
+              <v:ContentDetailsView DockPanel.Dock="Bottom" DataContext="{Binding SelectedContentDetails}"
+                  MinHeight="25" Height="{w:SettingsBinding ContentDetailsViewHeight}" />
 
-      <v:PartitionDetailsView DataContext="{Binding PartitionDetailsViewModel}" />
+              <v:PartitionDetailsView DataContext="{Binding Details}" />
 
-    </DockPanel>
+            </DockPanel>
 
-    <v:PartitionContentsView DataContext="{Binding PartitionContentsViewModel}" />
+            <v:PartitionContentsView DataContext="{Binding Contents}" />
 
+          </DockPanel>
+        </DataTemplate>
+      </TabControl.ContentTemplate>
+    </TabControl>
   </DockPanel>
 </Window>
