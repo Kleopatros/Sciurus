@@ -1,9 +1,9 @@
-﻿<Window x:Class="Sciurus.Views.Shell"
+﻿<Window x:Class="Sciurus.Views.MainView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:w="clr-namespace:Sciurus.Windows"
     xmlns:v="clr-namespace:Sciurus.Views"
-    Width="{w:SettingsBinding ShellViewWidth}" Height="{w:SettingsBinding ShellViewHeight}"
+    Width="{w:SettingsBinding MainViewWidth}" Height="{w:SettingsBinding MainViewHeight}"
     Title="{Binding Title}">
 
   <DockPanel>

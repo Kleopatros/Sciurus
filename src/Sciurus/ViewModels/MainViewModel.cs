@@ -3,9 +3,9 @@
 namespace Sciurus.ViewModels
 {
     /// <summary>
-    /// View model for the application shell.
+    /// Main view model for the application.
     /// </summary>
-    public class ShellViewModel : ViewModel
+    public class MainViewModel : ViewModel
     {
         private string _title;
 
@@ -13,9 +13,9 @@ namespace Sciurus.ViewModels
         private PartitionViewModel _selectedPartition;
 
         /// <summary>
-        /// Intializes a new <see cref="ShellViewModel"/> instance.
+        /// Intializes a new <see cref="MainViewModel"/> instance.
         /// </summary>
-        public ShellViewModel()
+        public MainViewModel()
         {
             // TODO: placeholders
             this.Title = "Workspace - Sciurus";

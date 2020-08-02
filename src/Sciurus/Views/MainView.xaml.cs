@@ -3,14 +3,14 @@
 namespace Sciurus.Views
 {
     /// <summary>
-    /// Interaction logic for the application shell.
+    /// Interaction logic for the application main view.
     /// </summary>
-    public partial class Shell : Window
+    public partial class MainView : Window
     {
         /// <summary>
-        /// Initializes a new <see cref="Shell"/> instance.
+        /// Initializes a new <see cref="MainView"/> instance.
         /// </summary>
-        public Shell()
+        public MainView()
         {
             this.InitializeComponent();
         }

@@ -26,24 +26,24 @@ namespace Sciurus.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("720")]
-        public double ShellViewHeight {
+        public double MainViewHeight {
             get {
-                return ((double)(this["ShellViewHeight"]));
+                return ((double)(this["MainViewHeight"]));
             }
             set {
-                this["ShellViewHeight"] = value;
+                this["MainViewHeight"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1280")]
-        public double ShellViewWidth {
+        public double MainViewWidth {
             get {
-                return ((double)(this["ShellViewWidth"]));
+                return ((double)(this["MainViewWidth"]));
             }
             set {
-                this["ShellViewWidth"] = value;
+                this["MainViewWidth"] = value;
             }
         }
         

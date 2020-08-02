@@ -38,32 +38,32 @@ namespace Sciurus
         /// </summary>
         private void Initialize()
         {
-            Window shell = this.CreateShell();
-            if (shell != null)
+            Window mainView = this.CreateMainView();
+            if (mainView != null)
             {
-                this.InitializeShell(shell);
+                this.InitializeMainView(mainView);
             }
 
             this.OnInitialized();
         }
 
         /// <summary>
-        /// Creates the shell or main window of the application.
+        /// Creates the main view of the application.
         /// </summary>
-        /// <returns>The shell of the application.</returns>
-        private Window CreateShell()
+        /// <returns>The main view of the application.</returns>
+        private Window CreateMainView()
         {
-            ShellViewModel shellViewModel = new ShellViewModel();
-            Shell shell = new Shell() { DataContext = shellViewModel };
-            return shell;
+            MainViewModel mainViewModel = new MainViewModel();
+            MainView mainView = new MainView() { DataContext = mainViewModel };
+            return mainView;
         }
 
         /// <summary>
-        /// Initializes the shell.
+        /// Initializes the main view.
         /// </summary>
-        private void InitializeShell(Window shell)
+        private void InitializeMainView(Window mainView)
         {
-            this.MainWindow = shell;
+            this.MainWindow = mainView;
         }
 
         /// <summary>

@@ -2,10 +2,10 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sciurus.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="ShellViewHeight" Type="System.Double" Scope="User">
+    <Setting Name="MainViewHeight" Type="System.Double" Scope="User">
       <Value Profile="(Default)">720</Value>
     </Setting>
-    <Setting Name="ShellViewWidth" Type="System.Double" Scope="User">
+    <Setting Name="MainViewWidth" Type="System.Double" Scope="User">
       <Value Profile="(Default)">1280</Value>
     </Setting>
     <Setting Name="DetailsViewWidth" Type="System.Double" Scope="User">
