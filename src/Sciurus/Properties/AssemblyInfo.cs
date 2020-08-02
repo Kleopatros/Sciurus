@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyProduct("Sciurus")]
 [assembly: AssemblyCopyright("Copyright © Kleopatros 2020")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("en-US")]
+[assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
